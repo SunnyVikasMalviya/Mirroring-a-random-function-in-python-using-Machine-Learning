@@ -18,4 +18,6 @@ zero to nine arranged in 100 rows with each row containing 1000 numbers and all 
 this data is stored in a file named dataset.txt. 
 I made 5 files with 1 lakh numbers in each. Hope thats enough.
 
-2.
+2. Sorted each line individually in the dataset files using the Sorted_Dataset_Producer.py. These files help count the number of occurences of each number in each 1000 random numbers produced.  
+
+3. 
