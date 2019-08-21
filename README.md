@@ -21,7 +21,7 @@ I made 5 of these files with 1 lakh numbers in each. Hope thats enough. This is 
 Sorted each line individually in the dataset files using the Sorted_Dataset_Producer.py. These files help count the number of occurences of each number in each 1000 random numbers produced.  
 
 3. Frequency count:
-The sorted dataset files were then input to Number_Frequency_Finder.py, which essentially parses through each line in the datasets(100 lines in each of the 5 dataset files) and counts the frequency of each number in that line. The frequency of each number in every line is written in the below mentioned manner.
+The sorted dataset files were then input to Number_Frequency_Finder.py, which essentially parses through each line in the datasets(100 lines in each of the 5 dataset files) and counts the frequency of each number in that line. The frequency of each number in every line is written in the below mentioned manner.<br/>
 Line0 : (0,82)(1,85)(2,98)(3,98)(4,115)(5,96)(6,124)(7,90)(8,109)(9,103)
 
 4. Generated a scatter plot:
@@ -29,3 +29,14 @@ Line0 : (0,82)(1,85)(2,98)(3,98)(4,115)(5,96)(6,124)(7,90)(8,109)(9,103)
 <img src="https://github.com/SunnyVikasMalviya/Mirroring-a-random-function-in-python-using-Machine-Learning/blob/master/dataset/Frequency_Scatter_Plot1.png" alt="Scatter Plot">
 <br/>
 The plot above has the digits 0-9 on the X-axis and the Y-axis shows the frequency of each number in a single dataset file. Since there are 100 lines, each point representing the frequency of that digit in a particular line. But now I think this was not of much use.
+
+5. Generated a bubble plot:
+<br/>
+<img src="https://github.com/SunnyVikasMalviya/Mirroring-a-random-function-in-python-using-Machine-Learning/blob/master/dataset/Bubble_Plot1.png" alt="Bubble Plot">
+<br/>
+After a long time I got something to work with which I wanted to do from the very beginning for generating those scatter plots.<br/>
+Line0 : (0,82)(1,85)(2,98)(3,98)(4,115)(5,96)(6,124)(7,90)(8,109)(9,103)
+<br/>The frequency count files have groups of tuples as in the above line, for each lines storing the dataset. These tuples act as a key for storing the "FREQUENCY of the frequency of the digits in each of the lines". This helps us make a bubble plot for each of the data files.<br/>
+The Bubble plots have been divided into four different types:<br/>
+Individual File Plots...Combined Individuals...Unscaled Combined Groups...Scaled Combined Groups.<br/>
+I know these names are not self explanatory but read the name and then look at the graph, you might just get the idea of what they represent. 
